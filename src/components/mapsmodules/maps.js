@@ -4,8 +4,8 @@ import { Marker } from '@react-google-maps/api';
 import "./maps.css"
 
 const containerStyle = {
-  width: '440px',
-  height: '500px'
+  width: '400px',
+  height: '250px'
 };
 
 var center = {
@@ -123,9 +123,7 @@ const Maps = () => {
   return (
     <div id="map">
 
-      <div className='input1' style={{maxwidth:"300px"}}>
-      <input type="text" placeholder="Search.." name="search" onChange={(e)=>{setLocation(e.target.value)}}/>
-      <button type="submit" onClick={()=>{newcheck()}}><i className="fa fa-search"></i></button></div>
+      
       {isLoaded ?
       <div id="map1">
         <GoogleMap
@@ -139,7 +137,11 @@ const Maps = () => {
           <Marker position={{ lat: -3.746122699999999, lng: -38.5230346 }} />
           <></>
         </GoogleMap></div>: <p>loading..</p>}
+       
         <div className='list1'>
+        <div className='input1' style={{maxwidth:"350px",marginTop:"300px"}}>
+      <input type="text" placeholder="Search.." name="search" onChange={(e)=>{setLocation(e.target.value)}}/>
+      <button type="submit" onClick={()=>{newcheck()}}><i className="fa fa-search"></i></button></div>
         {restaurant.map((res1)=>(<div className='list'>
           <div style={{display:'flex',flexDirection:'column'}}>
           <p>{res1.name}</p>

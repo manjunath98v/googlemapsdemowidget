@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width:400px;
+    max-width:350px;
+    margin-top: 5px;
     padding: 20px;
     
 }
 .list1{
-    margin-top: 600px;
+    /* margin-top: 600px; */
     overflow: hidden;
 }
  input[type=text] {
@@ -23,13 +24,14 @@
       /* overflow-y: scroll; */
       border:2px solid grey;
       margin-left: 15px;
-      border-radius: 5px;
+      border-radius: 15px;
       padding: 5px;
+      margin-top: 15px;
   }
   
  button {
     /* float: left; */
-    width: 5%;
+    width: 10%;
     padding: 10px;
     background: #2196F3;
     color: white;
