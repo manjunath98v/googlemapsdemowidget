@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  /* background: linear-gradient(to left, #2bc0e4, #eaecc6);  */
+  color: #707070;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.container {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.form-rounded {
+  border-radius: 2em;
+}
+
+.back-card {
+  border-radius: 40px !important;
+}
+
+.city-name {
+  /* position: absolute; */
+  width: 100%;
+}
+
+.city-name p {
+  font-size: 16px;
+  font-weight: 400;
+  /* padding: 60px; */
+}
+
+.city-name span {
+  font-weight: 400;
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  top: -60px;
+}
+
+.temp span {
+  font-weight: 100;
+  font-size: 4em;
+  letter-spacing: -5px;
+  white-space: nowrap;
+}
+.card-mid {
+  /* line-height: 0.5; */
+  /* padding: 30px; */
+}
+
+.condition {
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: capitalize;
+  /* padding: 10px; */
+}
+.high::before {
+  content: '';
+  width: 10px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+.low::before {
+  content: '';
+  width: 10px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+.icon-container {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  /* padding: auto; */
+  background: #202020;
+}
+.icon-container img {
+  margin: auto;
+}
+
+.card-bottom {
+  line-height: 0.5;
+}
+.card-bottom span {
+  font-size: 12px;
+}
+.card-bottom p {
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: -2px;
+}
+
+.card{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* margin: 5px; */
+  padding: 5px;
+  align-items: center;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  width: 30%;
+  border-radius: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 15px;
+}
+
+.smallcards{
+  display: flex;
+  flex-direction: row;
+  overflow:auto;
+
+}
